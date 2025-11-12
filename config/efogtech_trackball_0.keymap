@@ -33,7 +33,7 @@
 			bindings = <
 				// buttons
 				&ltm LAYER_USER MB4       &ltm LAYER_USER MB5
-				&lt LAYER_SCROLL          &lt LAYER_SCROLL
+				&tog LAYER_SCROLL         &tog LAYER_SCROLL
 				&mkp MCLK                 &mkp RCLK
 				&mkp LCLK                 &mkp LCLK
 
@@ -76,9 +76,9 @@
 			DECLARE_ENCODERS;
 			bindings = <
 			    &trans              &trans
-			    &trans              &scrlsens P2SM_INC 1
-			    &rrl 1              &scrlsens P2SM_DEC 1
-			    &sens P2SM_DEC 1    &sens P2SM_INC 1
+			    &trans              &trans
+			    &trans              &trans
+			    &trans              &trans
 
 				&sens P2SM_DEC 1    &scrlsens P2SM_INC 1
 				&sens P2SM_INC 1    &scrlsens P2SM_DEC 1
@@ -103,13 +103,13 @@
 			display-name = "User";
 			DECLARE_ENCODERS;
 			bindings = <
-				&trans        &trans
-				&trans        &trans
-				&trans        &trans
-				&trans        &trans
+				&kp LC(W)              &kp LC(LS(T))
+				&kp LA(F4)             &kp F5
+				&rrl 1                 &trans
+				&studio_unlock         &soft_off
 
-				&kp C_VOL_UP  &kp LC(TAB)
-				&kp C_VOL_DN  &kp LC(LS(TAB))
+				&sens P2SM_DEC 1      &scrlsens P2SM_INC 1
+				&sens P2SM_INC 1      &scrlsens P2SM_DEC 1
 		    >;
 		};
 	};
