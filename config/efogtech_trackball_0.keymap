@@ -104,8 +104,8 @@
 			DECLARE_ENCODERS;
 			bindings = <
 				&kp LC(W)              &kp LC(LS(T))
-				&kp LA(F4)             &kp F5
-				&rrl 1                 &trans
+				&kp F5                 &kp LA(F4)
+				&trans                 &rrl 1
 				&studio_unlock         &soft_off
 
 				&sens P2SM_DEC 1      &scrlsens P2SM_INC 1
