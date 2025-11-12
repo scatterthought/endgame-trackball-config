@@ -33,8 +33,8 @@
 			bindings = <
 				// buttons
 				&ltm LAYER_USER MB4       &ltm LAYER_USER MB5
-				&tog LAYER_SCROLL         &tog LAYER_SCROLL
-				&mkp MCLK                 &mkp RCLK
+				&mkp RCLK                 &mkp RCLK
+				&mkp MCLK                 &mkp MCLK
 				&mkp LCLK                 &mkp LCLK
 
 				// rotary encoders
@@ -103,9 +103,9 @@
 			display-name = "User";
 			DECLARE_ENCODERS;
 			bindings = <
-				&kp LC(W)              &kp LC(LS(T))
-				&kp F5                 &kp LA(F4)
-				&trans                 &rrl 1
+				&kp F5                 &kp F5
+				&kp LC(W)              &kp LC(W)
+				&kp LC(LS(T))          &kp LC(LS(T))
 				&studio_unlock         &soft_off
 
 				&sens P2SM_DEC 1      &scrlsens P2SM_INC 1
