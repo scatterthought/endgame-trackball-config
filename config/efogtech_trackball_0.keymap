@@ -17,7 +17,7 @@
 #define LAYER_SNIPE 4
 #define LAYER_USER 5
 
-#define SCROLL_MULTIPLIER 2
+#define SCROLL_MULTIPLIER 1
 #define SCROLL_DIVISOR 3
 
 #define SNIPE_MULTIPLIER 1
@@ -38,8 +38,8 @@
 				&mkp LCLK                 &mkp LCLK
 
 				// rotary encoders
-				&sens P2SM_DEC 1          &scrlsens P2SM_INC 1
-				&sens P2SM_INC 1          &scrlsens P2SM_DEC 1
+				&sens P2SM_INC 1          &scrlsens P2SM_INC 1
+				&sens P2SM_DEC 1          &scrlsens P2SM_DEC 1
 			>;
 		};
 
@@ -108,8 +108,8 @@
 				&kp LC(LS(T))          &kp LC(LS(T))
 				&studio_unlock         &soft_off
 
-				&sens P2SM_DEC 1      &scrlsens P2SM_INC 1
-				&sens P2SM_INC 1      &scrlsens P2SM_DEC 1
+				&sens P2SM_INC 1          &scrlsens P2SM_INC 1
+				&sens P2SM_DEC 1          &scrlsens P2SM_DEC 1
 		    >;
 		};
 	};
