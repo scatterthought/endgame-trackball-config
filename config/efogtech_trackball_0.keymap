@@ -18,7 +18,7 @@
 #define LAYER_USER 5
 
 #define SCROLL_MULTIPLIER 1
-#define SCROLL_DIVISOR 3
+#define SCROLL_DIVISOR 2
 
 #define SNIPE_MULTIPLIER 1
 #define SNIPE_DIVISOR 4
@@ -103,9 +103,9 @@
 			display-name = "User";
 			DECLARE_ENCODERS;
 			bindings = <
-				&kp F5                 &kp F5
 				&kp LC(W)              &kp LC(W)
 				&kp LC(LS(T))          &kp LC(LS(T))
+				&kp F5                 &kp F5
 				&studio_unlock         &soft_off
 
 				&sens P2SM_INC 1          &scrlsens P2SM_INC 1
@@ -116,6 +116,12 @@
 
 	trackball {
 		scroll {
+			layers = <LAYER_SCROLL>;
+			input-processors = <&zip_xy_scaler SCROLL_MULTIPLIER SCROLL_DIVISOR>, <&zip_axis_clamper>,
+							   <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+		};
+
+		user {
 			layers = <LAYER_SCROLL>;
 			input-processors = <&zip_xy_scaler SCROLL_MULTIPLIER SCROLL_DIVISOR>, <&zip_axis_clamper>,
 							   <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
