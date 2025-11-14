@@ -32,7 +32,7 @@
 			DECLARE_ENCODERS;
 			bindings = <
 				// buttons
-				&ltm LAYER_USER MB4       &ltm LAYER_USER MB5
+				&ltm LAYER_SCROLL MB4       &ltm LAYER_SCROLL MB5
 				&mkp RCLK                 &mkp RCLK
 				&mkp MCLK                 &mkp MCLK
 				&mkp LCLK                 &mkp LCLK
@@ -75,10 +75,10 @@
 			display-name = "Scroll";
 			DECLARE_ENCODERS;
 			bindings = <
-			    &trans              &trans
-			    &trans              &trans
-				&tog LAYER_SCROLL         &tog LAYER_SCROLL
-				&tog LAYER_SCROLL         &tog LAYER_SCROLL
+				&kp LC(W)              &kp LC(W)
+				&kp LC(LS(T))          &kp LC(LS(T))
+				&kp F5                 &kp F5
+				&studio_unlock         &soft_off
 
 				&sens P2SM_DEC 1    &scrlsens P2SM_INC 1
 				&sens P2SM_INC 1    &scrlsens P2SM_DEC 1
@@ -116,12 +116,6 @@
 
 	trackball {
 		scroll {
-			layers = <LAYER_SCROLL>;
-			input-processors = <&zip_xy_scaler SCROLL_MULTIPLIER SCROLL_DIVISOR>, <&zip_axis_clamper>,
-							   <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
-		};
-
-		user {
 			layers = <LAYER_SCROLL>;
 			input-processors = <&zip_xy_scaler SCROLL_MULTIPLIER SCROLL_DIVISOR>, <&zip_axis_clamper>,
 							   <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
