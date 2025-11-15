@@ -1,7 +1,7 @@
 # Ambidextrous Endgaming
-This modified keymap enables ambidextrous use of the efog.tech Endgame trackball, so that the device can be used with either hand at any time. It's intended for when the Endgame is positioned between a split keyboard, pointing directly at the monitor.
+This keymap enables the efog.tech Endgame trackball to be used with either hand interchangeably. It's intended for when the Endgame is positioned between a split keyboard, pointing directly at the monitor.
 
-Button locations are optimized for  hands to be at an angle to the trackball (since it's directly in front of the user's body).
+Buttons are optimized for the user's hands to be at an angle to the trackball (since it's directly in front of their body).
 
 ## Default
 The Default layer provides the five standard mouse buttons, plus the ability to enable the Snipe and Scroll layers.
