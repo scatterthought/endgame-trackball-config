@@ -75,10 +75,10 @@
 			display-name = "Scroll";
 			DECLARE_ENCODERS;
 			bindings = <
-				&to LAYER_DEVICE     &to LAYER_DEVICE
-				&trans               &trans
-				&trans               &trans
 				&studio_unlock       &soft_off
+				&to LAYER_DEVICE     &to LAYER_DEVICE
+				&to LAYER_DEFAULT    &to LAYER_DEFAULT
+				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 				&none                &none
