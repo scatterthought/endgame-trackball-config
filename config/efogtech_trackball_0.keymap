@@ -21,7 +21,7 @@
 #define SCROLL_DIVISOR 2
 
 #define SNIPE_MULTIPLIER 1
-#define SNIPE_DIVISOR 4
+#define SNIPE_DIVISOR 3
 
 / {
 	keymap {
@@ -80,7 +80,7 @@
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 
-				&to LAYER_DEFAULT    &to LAYER_DEFAULT
+				&none                &none
 				&none                &none
 			>;
 		};
@@ -94,7 +94,7 @@
 				&kp F5               &kp F5
 				&trans               &trans
 
-				&to LAYER_DEFAULT    &to LAYER_DEFAULT
+				&none                &none
 				&none                &none
 			>;
 		};
