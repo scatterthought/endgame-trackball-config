@@ -77,7 +77,7 @@
 			bindings = <
 				&kp LC(W)              &kp LC(W)
 				&kp LC(LS(T))          &kp LC(LS(T))
-				&kp F5                 &tog LAYER_DEVICE
+				&kp F5                 &kp F5
 				&studio_unlock         &soft_off
 
 				&sens_nowrap P2SM_INC 1          &scrlsens_nowrap P2SM_INC 1
