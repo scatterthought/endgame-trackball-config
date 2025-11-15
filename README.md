@@ -28,9 +28,9 @@ The Snipe layer reduces pointer speed 1/3rd of normal, which is helpful to count
 | *Encoder*: Disabled | *Encoder*: Disabled |
 
 ## Scroll
-When the Scroll layer is enabled, moving the ball will scroll vertically and horizontally.
+When the Scroll layer is enabled, moving the ball scrolls vertically and horizontally.
 * This layer also provides access to the Device layer for additional settings.
-* Pressing any of the bottom buttons will return to the Default layer, which reenables pointer movement and mouse buttons.
+* Pressing any of the bottom buttons returns to the Default layer, which reenables pointer movement and mouse buttons.
 
 | Left | Right |
 | ---- | ----- |
@@ -48,7 +48,7 @@ The Device layer contains device settings for polling rate, RGB lighting, Blueto
   
 | Left | Right |
 | ---- | ----- |
-| Polling rate | Clear all Bluetooth profiles |
+| Cycle polling rate | Clear all Bluetooth profiles |
 | Change RGB lighting effect | Next Bluetooth device |
 | Toggle RGB lighting on/off | Previous Bluetooth device |
 | Return to Default layer | Return to Default layer |
