@@ -1,3 +1,4 @@
+# Ambidextrous Endgaming
 This modified keymap enables ambidextrous use of the efog.tech Endgame trackball, so that the device can be used with either hand at any time. It's intended for when the Endgame is positioned between a split keyboard, pointing directly at the monitor.
 
 Button locations are optimized for  hands to be at an angle to the trackball (since it's directly in front of the user's body).
