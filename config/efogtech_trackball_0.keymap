@@ -38,7 +38,7 @@
 				&mkp LCLK                 &mkp LCLK
 
 				// rotary encoders
-				&to LAYER_SNIPE           &to LAYER_SNIPE
+				&none                     &none
 				&to LAYER_SNIPE           &to LAYER_SNIPE
 			>;
 		};
@@ -89,13 +89,13 @@
 			display-name = "Snipe";
 			DECLARE_ENCODERS;
 			bindings = <
-				&to LAYER_DEFAULT           &to LAYER_DEFAULT
-				&trans           &trans
-				&trans           &trans
-				&trans           &trans
+				&to LAYER_DEVICE     &to LAYER_DEVICE
+				&trans               &trans
+				&trans               &trans
+				&trans               &trans
 
-				&none            &none
-				&none            &none
+				&to LAYER_DEFAULT    &to LAYER_DEFAULT
+				&none                &none
 			>;
 		};
 
