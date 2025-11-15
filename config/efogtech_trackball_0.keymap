@@ -32,14 +32,14 @@
 			DECLARE_ENCODERS;
 			bindings = <
 				// buttons
-				&ltm LAYER_SCROLL MB4     &ltm LAYER_SCROLL MB5
+				&ltm LAYER_SNIPE MB4      &ltm LAYER_SNIPE MB5
 				&mkp RCLK                 &mkp RCLK
 				&mkp MCLK                 &mkp MCLK
 				&mkp LCLK                 &mkp LCLK
 
 				// rotary encoders
 				&none                     &none
-				&to LAYER_SNIPE           &to LAYER_SNIPE
+				&to LAYER_SCROLL          &to LAYER_SCROLL
 			>;
 		};
 
@@ -75,13 +75,13 @@
 			display-name = "Scroll";
 			DECLARE_ENCODERS;
 			bindings = <
-				&kp LC(W)              &kp LC(W)
-				&kp LC(LS(T))          &kp LC(LS(T))
-				&kp F5                 &kp F5
-				&studio_unlock         &soft_off
+				&to LAYER_DEVICE     &to LAYER_DEVICE
+				&trans               &trans
+				&trans               &trans
+				&studio_unlock       &soft_off
 
-				&sens_nowrap P2SM_INC 1          &scrlsens_nowrap P2SM_INC 1
-				&sens_nowrap P2SM_DEC 1          &scrlsens_nowrap P2SM_DEC 1
+				&to LAYER_DEFAULT    &to LAYER_DEFAULT
+				&none                &none
 			>;
 		};
 
@@ -89,9 +89,9 @@
 			display-name = "Snipe";
 			DECLARE_ENCODERS;
 			bindings = <
-				&to LAYER_DEVICE     &to LAYER_DEVICE
-				&trans               &trans
-				&trans               &trans
+				&kp LC(W)            &kp LC(W)
+				&kp LC(LS(T))        &kp LC(LS(T))
+				&kp F5               &kp F5
 				&trans               &trans
 
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
