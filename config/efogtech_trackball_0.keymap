@@ -75,8 +75,8 @@
 			display-name = "Scroll";
 			DECLARE_ENCODERS;
 			bindings = <
-				&studio_unlock       &soft_off
 				&to LAYER_DEVICE     &to LAYER_DEVICE
+				&trans               &trans
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 
@@ -92,7 +92,7 @@
 				&kp LC(W)            &kp LC(W)
 				&kp LC(LS(T))        &kp LC(LS(T))
 				&kp F5               &kp F5
-				&trans               &trans
+				&studio_unlock       &soft_off
 
 				&none                &none
 				&none                &none
