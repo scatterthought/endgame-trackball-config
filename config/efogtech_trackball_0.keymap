@@ -38,7 +38,7 @@
 				&mkp LCLK                 &mkp LCLK
 
 				// rotary encoders
-				&to LAYER_DEFAULT         &to LAYER_DEFAULT
+				&to LAYER_SNIPE           &to LAYER_SNIPE
 				&to LAYER_SNIPE           &to LAYER_SNIPE
 			>;
 		};
@@ -64,7 +64,7 @@
 				&rgb_off           &bt BT_CLR
 				&rgb_ug RGB_EFF    &bt BT_NXT
 				&rgb_tog           &bt BT_PRV
-				&rrl 1             &tog LAYER_DEVICE
+				&rrl 1             &to LAYER_DEFAULT
 
 				&sens_nowrap P2SM_INC 1          &scrlsens_nowrap P2SM_INC 1
 				&sens_nowrap P2SM_DEC 1          &scrlsens_nowrap P2SM_DEC 1
@@ -89,13 +89,13 @@
 			display-name = "Snipe";
 			DECLARE_ENCODERS;
 			bindings = <
-				&tog LAYER_DEVICE           &tog LAYER_DEVICE
+				&to LAYER_DEFAULT           &to LAYER_DEFAULT
 				&trans           &trans
 				&trans           &trans
 				&trans           &trans
 
-				&kp LEFT         &kp RIGHT
-				&kp RIGHT        &kp LEFT
+				&none            &none
+				&none            &none
 			>;
 		};
 
