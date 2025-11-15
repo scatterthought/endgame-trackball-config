@@ -14,7 +14,7 @@ The Default layer provides the five standard mouse buttons, plus the ability to 
 | *Encoder*: Switch to Scroll layer | *Encoder*: Switch to Scroll layer |
 
 ## Snipe
-The Snipe layer reduces pointer speed 1/3rd of normal, which is helpful to counter stiction/precision issues from static bearings. This layer also adds Chromium browser commands for quick tab management.
+The Snipe layer reduces pointer speed 1/3rd of normal, which is helpful to counter stiction/precision issues from static bearings. This layer also provides ZMK Studio Unlock, power off, and Chromium browser-tab commands.
 *  To close a tab, press both top-middle buttons together.
 *  To reopen a closed tab, press one of the top-middle buttons and a top-corner button.
 *  To refresh a tab, press one of the top-middle buttons and a bottom-corner button.
@@ -24,18 +24,18 @@ The Snipe layer reduces pointer speed 1/3rd of normal, which is helpful to count
 | Close tab (Ctrl+W) | Close tab (Ctrl+W) |
 | Reopen closed tab (Ctrl+Shift+T) | Reopen closed tab (Ctrl+Shift+T) |
 | Refresh (F5) | Refresh (F5) |
-| Transparent | Transparent |
+| ZMK Studio Unlock | Power off |
 | *Encoder*: Disabled | *Encoder*: Disabled |
 
 ## Scroll
 When the Scroll layer is enabled, moving the ball will scroll vertically and horizontally.
-* This layer also contains some device-management commands.
+* This layer also provides access to the Device layer for additional settings.
 * Pressing any of the bottom buttons will return to the Default layer, which reenables pointer movement and mouse buttons.
 
 | Left | Right |
 | ---- | ----- |
-| ZMK Studio Unlock | Power off |
 | Enable Device layer | Enable Device layer |
+| Transparent | Transparent |
 | Return to Default layer | Return to Default layer |
 | Return to Default layer | Return to Default layer |
 | *Encoder*: Disabled | *Encoder*: Disabled |
@@ -48,8 +48,8 @@ The Device layer contains device settings for polling rate, RGB lighting, Blueto
   
 | Left | Right |
 | ---- | ----- |
-| Polling rate (increases until it wraps around) | Clear all Bluetooth profiles |
+| Polling rate | Clear all Bluetooth profiles |
 | Change RGB lighting effect | Next Bluetooth device |
-| Toggle RGB lighting | Previous Bluetooth device |
+| Toggle RGB lighting on/off | Previous Bluetooth device |
 | Return to Default layer | Return to Default layer |
 | *Encoder*: Pointer sensitivity<br>(Clockwise to increase) | *Encoder*: Twist scroll sensitivity<br>(**Counter**-clockwise to increase) |
