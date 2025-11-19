@@ -196,8 +196,8 @@
 			feedback-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
 			feedback-extra-gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
 			step = <50>;
-			min-step = <0>;
-			max-step = <10>;
+			min-step = <1>;
+			max-step = <8>;
 			scroll;
 		};
 
