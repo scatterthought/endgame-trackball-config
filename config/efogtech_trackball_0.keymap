@@ -38,8 +38,8 @@
 				&mkp LCLK                 &mkp LCLK
 
 				// rotary encoders
-				&to LAYER_SNIPE          &to LAYER_SCROLL
-				&to LAYER_SCROLL          &to LAYER_SNIPE
+				&to LAYER_SNIPE          &to LAYER_SNIPE
+				&to LAYER_SCROLL         &to LAYER_SCROLL
 			>;
 		};
 
