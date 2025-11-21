@@ -52,8 +52,8 @@
 				&kp F5               &kp F5
 				&studio_unlock       &soft_off
 
-				&kp C_VOL_UP   &kp LC(TAB)
-				&kp C_VOL_DN   &kp LC(LS(TAB))
+				&none                &none
+				&none                &none
 			>;
 		};
 
