@@ -3,18 +3,28 @@ This keymap enables the efog.tech Endgame trackball to be used with either hand 
 
 Buttons are optimized for the user's hands to be at an angle to the trackball (since it's directly in front of their body).
 
+## Changes in Version 1.1.0
+* Extras layer added as hold action on top buttons.
+* Snipe layer moves to the encoder, allowing for mouse buttons to be used at same time.
+* Twist-scroll adjustments
+  * Threshold to engage twist scroll raised to reduce unintentional scrolling.
+  * Scroll sensitivity range changed to be 5-40% (in 5% steps).
+
+### Past releases
+* Version 1.0.0 - [Readme](version_1_0_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.0.0)
+
 ## Default
-The Default layer provides the five standard mouse buttons, plus the ability to enable the Snipe and Scroll layers.
+The Default layer provides the five standard mouse buttons, plus the ability to toggle on the Snipe and Scroll layers with the encoders.
 | Left | Right |
 | ---- | ----- |
-| *Tap*: Back mouse button,<br>*Hold*: momentary Snipe layer | *Tap*: Forward mouse button,<br>*Hold*: momentary Snipe layer |
+| *Tap*: Back mouse button,<br>*Hold*: momentary Extras layer | *Tap*: Forward mouse button,<br>*Hold*: momentary Extras layer |
 | Right mouse button | Right mouse button |
 | Middle mouse button | Middle mouse button |
 | Left mouse button | Mouse mouse button |
-| *Encoder*: Switch to Scroll layer | *Encoder*: Switch to Scroll layer |
+| *Encoder*: Snipe layer (Clockwise),<br>Scroll layer (Counter-clockwise) | *Encoder*: Snipe layer (Counter-clockwise),<br>Scroll layer (Clockwise) |
 
-## Snipe
-The Snipe layer reduces pointer speed 1/3rd of normal, which is helpful to counter stiction/precision issues from static bearings. This layer also provides ZMK Studio Unlock, power off, and Chromium browser-tab commands.
+## Extras
+The Extras layer provides ZMK Studio Unlock, power off, and Chromium browser-tab management in two-button combinations.
 *  To close a tab, press both top-middle buttons together.
 *  To reopen a closed tab, press one of the top-middle buttons and a top-corner button.
 *  To refresh a tab, press one of the top-middle buttons and a bottom-corner button.
@@ -25,6 +35,17 @@ The Snipe layer reduces pointer speed 1/3rd of normal, which is helpful to count
 | Reopen closed tab (Ctrl+Shift+T) | Reopen closed tab (Ctrl+Shift+T) |
 | Refresh (F5) | Refresh (F5) |
 | ZMK Studio Unlock | Power off |
+| *Encoder*: Disabled | *Encoder*: Disabled |
+
+## Snipe
+The Snipe layer reduces pointer speed 1/3rd of normal, allowing for precision clicking with the Left/Middle/Right mouse buttons.
+
+| Left | Right |
+| ---- | ----- |
+| Return to Default layer | Return to Default layer |
+| Transparent | Transparent |
+| Transparent | Transparent |
+| Transparent | Transparent |
 | *Encoder*: Disabled | *Encoder*: Disabled |
 
 ## Scroll
