@@ -61,13 +61,15 @@
 			display-name = "Device";
 			DECLARE_ENCODERS;
 			bindings = <
-				&sens_nowrap P2SM_INC 1      &scrlsens_nowrap P2SM_INC 1
-				&sens_nowrap P2SM_DEC 1      &scrlsens_nowrap P2SM_DEC 1
-				&p2sm_accel_adj P2SM_DEC 1   &p2sm_accel_adj P2SM_INC 1
+				&none                        &p2sm_accel_toggle
+				&none                &none
+				&none                &none
+				// &none                        &p2sm_accel_adj P2SM_INC 1
+				// &none                        &p2sm_accel_adj P2SM_DEC 1
 				&to LAYER_DEFAULT            &to LAYER_DEFAULT
 
-				&none                &none
-				&none                &none
+				&sens_nowrap P2SM_INC 1      &scrlsens_nowrap P2SM_INC 1
+				&sens_nowrap P2SM_DEC 1      &scrlsens_nowrap P2SM_DEC 1
 			>;
 		};
 
