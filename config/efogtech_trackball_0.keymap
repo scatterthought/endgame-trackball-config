@@ -61,9 +61,10 @@
 			display-name = "Device";
 			DECLARE_ENCODERS;
 			bindings = <
-				&none                        &p2sm_accel_toggle
 				&none                &none
 				&none                &none
+				&none                &none
+				// &none                        &p2sm_accel_toggle
 				// &none                        &p2sm_accel_adj P2SM_INC 1
 				// &none                        &p2sm_accel_adj P2SM_DEC 1
 				&to LAYER_DEFAULT            &to LAYER_DEFAULT
