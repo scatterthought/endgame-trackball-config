@@ -61,13 +61,13 @@
 			display-name = "Device";
 			DECLARE_ENCODERS;
 			bindings = <
-				&rrl 1               &bt BT_CLR
-				&rgb_ug RGB_EFF      &bt BT_NXT
-				&rgb_tog             &bt BT_PRV
-				&to LAYER_DEFAULT    &to LAYER_DEFAULT
+				&sens_nowrap P2SM_INC 1      &scrlsens_nowrap P2SM_INC 1
+				&sens_nowrap P2SM_DEC 1      &scrlsens_nowrap P2SM_DEC 1
+				&p2sm_accel_adj P2SM_DEC 1   &p2sm_accel_adj P2SM_INC 1
+				&to LAYER_DEFAULT            &to LAYER_DEFAULT
 
-				&sens_nowrap P2SM_INC 1          &scrlsens_nowrap P2SM_INC 1
-				&sens_nowrap P2SM_DEC 1          &scrlsens_nowrap P2SM_DEC 1
+				&none                &none
+				&none                &none
 			>;
 		};
 
@@ -75,10 +75,10 @@
 			display-name = "Scroll";
 			DECLARE_ENCODERS;
 			bindings = <
-				&to LAYER_DEVICE     &to LAYER_DEVICE
-				&trans               &trans
+				&to LAYER_DEVICE     &to LAYER_USER
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
-				&trans               &trans
+				&to LAYER_DEFAULT    &to LAYER_DEFAULT
+				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 
 				&to LAYER_SNIPE      &to LAYER_SNIPE
 				&none                &none
@@ -89,7 +89,7 @@
 			display-name = "Snipe";
 			DECLARE_ENCODERS;
 			bindings = <
-				&to LAYER_DEVICE     &to LAYER_DEVICE
+				&to LAYER_DEVICE     &to LAYER_USER
 				&trans               &trans
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 				&trans               &trans
@@ -103,13 +103,13 @@
 			display-name = "User";
 			DECLARE_ENCODERS;
 			bindings = <
-				&trans        &trans
-				&trans        &trans
-				&trans        &trans
-				&trans        &trans
+				&rrl 1               &bt BT_CLR
+				&rgb_ug RGB_EFF      &bt BT_NXT
+				&rgb_tog             &bt BT_PRV
+				&to LAYER_DEFAULT    &to LAYER_DEFAULT
 
-				&kp C_VOL_UP  &kp LC(TAB)
-				&kp C_VOL_DN  &kp LC(LS(TAB))
+				&none                &none
+				&none                &none
 		    >;
 		};
 	};
