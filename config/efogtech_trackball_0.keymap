@@ -78,9 +78,9 @@
 				&to LAYER_DEVICE     &to LAYER_DEVICE
 				&trans               &trans
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
-				&to LAYER_DEFAULT    &to LAYER_DEFAULT
+				&trans               &trans
 
-				&none                &none
+				&to LAYER_SNIPE      &to LAYER_SNIPE
 				&none                &none
 			>;
 		};
@@ -89,13 +89,13 @@
 			display-name = "Snipe";
 			DECLARE_ENCODERS;
 			bindings = <
+				&to LAYER_DEVICE     &to LAYER_DEVICE
+				&trans               &trans
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
-				&trans               &trans
-				&trans               &trans
 				&trans               &trans
 
 				&none                &none
-				&none                &none
+				&to LAYER_SCROLL     &to LAYER_SCROLL
 			>;
 		};
 
