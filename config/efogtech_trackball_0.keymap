@@ -63,7 +63,7 @@
 			bindings = <
 				&p2sm_twist_toggle           &p2sm_accel_toggle
 				&none                        &p2sm_accel_adj P2SM_INC 1
-				&none                        &p2sm_accel_adj P2SM_DEC 1
+				&rrl 1                       &p2sm_accel_adj P2SM_DEC 1
 				&to LAYER_DEFAULT            &to LAYER_DEFAULT
 
 				&sens_nowrap P2SM_INC 1      &scrlsens_nowrap P2SM_INC 1
@@ -103,7 +103,7 @@
 			display-name = "User";
 			DECLARE_ENCODERS;
 			bindings = <
-				&rrl 1               &bt BT_CLR
+				&none                &bt BT_CLR
 				&rgb_ug RGB_EFF      &bt BT_NXT
 				&rgb_tog             &bt BT_PRV
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
