@@ -1,4 +1,10 @@
 # Version 1.1.0
+## Changes from previous version
+  * Extras layer added as hold action on top buttons.
+  * Snipe layer moved to the encoder, allowing for mouse buttons to be used at same time.
+  * Twist-scroll adjustments
+    * Threshold to engage twist scroll raised to reduce unintentional scrolling.
+    * Scroll sensitivity range changed to be 5-40% (in 5% steps).
 ## Default
 The Default layer provides the five standard mouse buttons, plus the ability to toggle on the Snipe and Scroll layers with the encoders.
 | Left | Right |
