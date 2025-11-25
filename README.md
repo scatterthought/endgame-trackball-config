@@ -55,9 +55,9 @@ When the Scroll layer is enabled, moving the ball scrolls vertically and horizon
 | Left | Right |
 | ---- | ----- |
 | Enable Device layer | Enable User layer |
-| Transparent | Transparent |
 | Return to Default layer | Return to Default layer |
-| Transparent | Transparent |
+| Return to Default layer | Return to Default layer |
+| Return to Default layer | Return to Default layer |
 | *Encoder*: Snipe layer (Clockwise only) | *Encoder*: Snipe layer (Counter-clockwise only) |
 
 ## Device
