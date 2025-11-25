@@ -3,14 +3,13 @@ This keymap enables the efog.tech Endgame trackball to be used with either hand 
 
 Buttons are optimized for the user's hands to be at an angle to the trackball (since it's directly in front of their body).
 
-## Changes in Version 1.1.0
-* Extras layer added as hold action on top buttons.
-* Snipe layer moves to the encoder, allowing for mouse buttons to be used at same time.
-* Twist-scroll adjustments
-  * Threshold to engage twist scroll raised to reduce unintentional scrolling.
-  * Scroll sensitivity range changed to be 5-40% (in 5% steps).
+## Changes in Version 1.2.0
+* Synchronized with efogtech repository to add twist-scroll native acceleration
+* Reorganization of Device layer to incorporate new twist-scroll controls
+* RGB and Bluetooth moved from Device layer to User layer.
 
 ### Past releases
+* Version 1.1.0 - [Readme](version_1_1_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.1.0)
 * Version 1.0.0 - [Readme](version_1_0_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.0.0)
 
 ## Default
@@ -38,39 +37,51 @@ The Extras layer provides ZMK Studio Unlock, power off, and Chromium browser-tab
 | *Encoder*: Disabled | *Encoder*: Disabled |
 
 ## Snipe
-The Snipe layer reduces pointer speed 1/3rd of normal, allowing for precision clicking with the Left/Middle/Right mouse buttons.
+The Snipe layer reduces pointer speed 1/3rd of normal, allowing for precision clicking with the Left and Right mouse buttons.
+* This layer also provides access to the Device layer to adjust DPI, pointer, and scroll settings.
 
 | Left | Right |
 | ---- | ----- |
+| Enable Device layer | Enable User layer |
+| Transparent | Transparent |
 | Return to Default layer | Return to Default layer |
 | Transparent | Transparent |
-| Transparent | Transparent |
-| Transparent | Transparent |
-| *Encoder*: Disabled | *Encoder*: Disabled |
+| *Encoder*: Scroll layer (Counter-clockwise only) | *Encoder*: Scroll layer (Clockwise only) |
 
 ## Scroll
 When the Scroll layer is enabled, moving the ball scrolls vertically and horizontally.
-* This layer also provides access to the Device layer for additional settings.
-* Pressing any of the bottom buttons returns to the Default layer, which reenables pointer movement and mouse buttons.
+* This layer also provides access to the Device layer to adjust DPI, pointer, and scroll settings.
 
 | Left | Right |
 | ---- | ----- |
-| Enable Device layer | Enable Device layer |
+| Enable Device layer | Enable User layer |
 | Transparent | Transparent |
 | Return to Default layer | Return to Default layer |
-| Return to Default layer | Return to Default layer |
-| *Encoder*: Disabled | *Encoder*: Disabled |
+| Transparent | Transparent |
+| *Encoder*: Snipe layer (Clockwise only) | *Encoder*: Snipe layer (Counter-clockwise only) |
 
 ## Device
-The Device layer contains device settings for polling rate, RGB lighting, Bluetooth, pointer sensitivity, and twist-scroll sensitivity.
-* This layer can only be accessed by first enabling the Scroll layer.
-* Polling rate increases to the maximum limit, then wraps around to start over from the minimum.
+The Device layer contains settings for polling rate, pointer sensitivity, and twist scroll.
+* This layer can only be accessed by first enabling the Snipe or Scroll layers.
 * Pointer and twist-scroll sensitivities increase or decrease to the limit and do **not** wrap around.
+* Polling rate and twist-scroll acceleration increase to the maximum limit, then wrap around to start over from the minimum.
   
 | Left | Right |
 | ---- | ----- |
-| Cycle polling rate | Clear all Bluetooth profiles |
+| Toggle twist scroll | Toggle twist-scroll acceleration |
+| Increase twist-scroll sensitivity | Increase twist-scroll acceleration |
+| Decrease twist-scroll sensitivity | Decrease twist-scroll acceleration |
+| Return to Default layer | Return to Default layer |
+| *Encoder*: Pointer sensitivity (Clockwise to increase) | *Encoder*: Polling rate (**Counter**-clockwise to increase) |
+
+## User
+The User layer contains settings for RGB lighting and Bluetooth.
+* This layer can only be accessed by first enabling the Snipe or Scroll layers.
+  
+| Left | Right |
+| ---- | ----- |
+| Disabled | Clear all Bluetooth profiles |
 | Change RGB lighting effect | Next Bluetooth device |
 | Toggle RGB lighting on/off | Previous Bluetooth device |
 | Return to Default layer | Return to Default layer |
-| *Encoder*: Pointer sensitivity<br>(Clockwise to increase) | *Encoder*: Twist scroll sensitivity<br>(**Counter**-clockwise to increase) |
+| *Encoder*: Disabled | *Encoder*: Disabled |
