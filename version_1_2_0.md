@@ -3,7 +3,7 @@
 ## Changes from previous version
 * Synchronized with efogtech repository to add twist-scroll native acceleration
 * Reorganization of Device layer to incorporate new twist-scroll controls
-* RGB and Bluetooth moved from Device layer to User layer.
+* RGB and Bluetooth moved from Device layer to User layer
 
 ## Default
 The Default layer provides the five standard mouse buttons, plus the ability to toggle on the Snipe and Scroll layers with the encoders.
