@@ -18,7 +18,7 @@
 #define LAYER_USER 5
 
 #define SCROLL_MULTIPLIER 1
-#define SCROLL_DIVISOR 2
+#define SCROLL_DIVISOR 3
 
 #define SNIPE_MULTIPLIER 1
 #define SNIPE_DIVISOR 3
@@ -33,8 +33,8 @@
 			bindings = <
 				// buttons
 				&ltm LAYER_EXTRAS MB4     &ltm LAYER_EXTRAS MB5
-				&mkp RCLK                 &mkp RCLK
 				&mkp MCLK                 &mkp MCLK
+				&mkp RCLK                 &mkp RCLK
 				&mkp LCLK                 &mkp LCLK
 
 				// rotary encoders
@@ -61,8 +61,7 @@
 			display-name = "Device";
 			DECLARE_ENCODERS;
 			bindings = <
-				&p2sm_twist_toggle           &p2sm_accel_toggle P2SM_ACCEL_TOGGLE
-//				&p2sm_twist_toggle           &none
+				&p2sm_accel_toggle P2SM_ACCEL_DIS           &p2sm_accel_toggle P2SM_ACCEL_EN
 				&scrlsens_nowrap P2SM_INC 1  &p2sm_accel_adj P2SM_INC 1
 				&scrlsens_nowrap P2SM_DEC 1  &p2sm_accel_adj P2SM_DEC 1
 				&to LAYER_DEFAULT            &to LAYER_DEFAULT
@@ -104,7 +103,7 @@
 			display-name = "User";
 			DECLARE_ENCODERS;
 			bindings = <
-				&none                &bt BT_CLR
+				&p2sm_twist_toggle   &bt BT_CLR
 				&rgb_ug RGB_EFF      &bt BT_NXT
 				&rgb_tog             &bt BT_PRV
 				&to LAYER_DEFAULT    &to LAYER_DEFAULT
