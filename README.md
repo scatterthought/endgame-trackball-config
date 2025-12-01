@@ -3,12 +3,14 @@ This keymap enables the efog.tech Endgame trackball to be used with either hand 
 
 Buttons are optimized for the user's hands to be at an angle to the trackball (since it's directly in front of their body).
 
-## Changes in Version 1.2.0
-* Synchronized with efogtech repository to add twist-scroll native acceleration
-* Reorganization of Device layer to incorporate new twist-scroll controls
-* RGB and Bluetooth moved from Device layer to User layer.
+## Changes in Version 1.2.1
+* Swapped Middle and Right mouse buttons
+* Split twist-scroll acceleration toggle into separate Enable/Disable buttons (so that you can be certain whether you're turning it on or off)
+* Moved twist-scroll toggle to the User layer
+* Reverted twist-scroll and drag-scroll sensitivities to the defaults
 
 ### Past releases
+* Version 1.2.0 - [Readme](version_1_2_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.2.0)
 * Version 1.1.0 - [Readme](version_1_1_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.1.0)
 * Version 1.0.0 - [Readme](version_1_0_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.0.0)
 
