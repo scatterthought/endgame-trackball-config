@@ -19,8 +19,8 @@ The Default layer provides the five standard mouse buttons, plus the ability to 
 | Left | Right |
 | ---- | ----- |
 | *Tap*: Back mouse button,<br>*Hold*: momentary Extras layer | *Tap*: Forward mouse button,<br>*Hold*: momentary Extras layer |
-| Right mouse button | Right mouse button |
 | Middle mouse button | Middle mouse button |
+| Right mouse button | Right mouse button |
 | Left mouse button | Mouse mouse button |
 | *Encoder*: Snipe layer (Clockwise),<br>Scroll layer (Counter-clockwise) | *Encoder*: Snipe layer (Counter-clockwise),<br>Scroll layer (Clockwise) |
 
@@ -70,7 +70,7 @@ The Device layer contains settings for polling rate, pointer sensitivity, and tw
   
 | Left | Right |
 | ---- | ----- |
-| Toggle twist scroll | Toggle twist-scroll acceleration |
+| Disable twist-scroll acceleration | Enable twist-scroll acceleration |
 | Increase twist-scroll sensitivity | Increase twist-scroll acceleration |
 | Decrease twist-scroll sensitivity | Decrease twist-scroll acceleration |
 | Return to Default layer | Return to Default layer |
@@ -82,7 +82,7 @@ The User layer contains settings for RGB lighting and Bluetooth.
   
 | Left | Right |
 | ---- | ----- |
-| Disabled | Clear all Bluetooth profiles |
+| Toggle twist scroll | Clear all Bluetooth profiles |
 | Change RGB lighting effect | Next Bluetooth device |
 | Toggle RGB lighting on/off | Previous Bluetooth device |
 | Return to Default layer | Return to Default layer |
