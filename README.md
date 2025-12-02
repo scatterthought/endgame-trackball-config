@@ -82,7 +82,7 @@ The User layer contains settings for RGB lighting and Bluetooth.
   
 | Left | Right |
 | ---- | ----- |
-| Toggle twist scroll | Clear all Bluetooth profiles |
+| Enable/disable twist scroll | Clear all Bluetooth profiles |
 | Change RGB lighting effect | Next Bluetooth device |
 | Toggle RGB lighting on/off | Previous Bluetooth device |
 | Return to Default layer | Return to Default layer |
