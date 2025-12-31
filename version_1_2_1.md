@@ -1,4 +1,4 @@
-# Version 1.2.2
+# Version 1.2.1
 ## Changes from previous version
 * Swapped Middle and Right mouse buttons
 * Split twist-scroll acceleration toggle into separate Enable/Disable buttons (so that you can be certain whether you're turning it on or off)
