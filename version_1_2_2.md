@@ -1,9 +1,5 @@
-# Ambidextrous Endgaming
-This keymap enables the efog.tech Endgame trackball to be used with either hand interchangeably. It's intended for when the Endgame is positioned between a split keyboard, pointing directly at the monitor.
-
-Buttons are optimized for the user's hands to be at an angle to the trackball (since it's directly in front of their body).
-
-## Changes in Version 1.2.1
+# Version 1.2.2
+## Changes from previous version
 * Swapped Middle and Right mouse buttons
 * Split twist-scroll acceleration toggle into separate Enable/Disable buttons (so that you can be certain whether you're turning it on or off)
 * Moved twist-scroll toggle to the User layer
