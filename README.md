@@ -18,7 +18,7 @@ I no longer maintain forked firmware for the Endgame, since the new Marshmallow 
 The Default layer provides the five standard mouse buttons, plus the ability to toggle on the Snipe and Scroll layers with the encoders or access the Extras layer momentarily.
 | Left | ZMK Studio (left) | Right | ZMK Studio (right) |
 | ---- | ----- | ---- | ----- |
-| Back mouse button, <br>Hold for Extras layer | Hold/tap (layer/mouse key): Extras, MB4 | Forward mouse button, <br>Hold for Extras layer | Hold/tap (layer/mouse key): Extras, MB5 |
+| Back mouse button, <br>Hold for Extras layer | Hold/tap (layer/mouse key): <br>Extras, MB4 | Forward mouse button, <br>Hold for Extras layer | Hold/tap (layer/mouse key): <br>Extras, MB5 |
 | Middle mouse button | Mouse Key Press: MB3 | Middle mouse button | Mouse Key Press: MB3 |
 | Right mouse button | Mouse Key Press: MB2 | Right mouse button | Mouse Key Press: MB2 |
 | Left mouse button | Mouse Key Press: MB1 | Mouse mouse button | Mouse Key Press: MB1 |
