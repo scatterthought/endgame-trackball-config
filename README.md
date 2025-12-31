@@ -5,6 +5,7 @@ Buttons are optimized for the user's hands to be at an angle to the trackball (s
 
 ## Changes in Version 2.0
 I no longer maintain forked firmware for the Endgame, since the new Marshmallow UI in the OEM firmware provides a configuration webpage for saving keymaps and adjusting device settings. My keymaps are now implemented as overrides to the default keymap in ZMK Studio.
+* Adjusted the Snipe layer to allow access to all main mouse buttons (Left/Middle/Right)
 * Moved RGB and Bluetooth settings to the Device layer
 * Removed the User layer
 
@@ -41,14 +42,13 @@ The Extras layer provides ZMK Studio Unlock, power off, and Chromium browser-tab
 | *Encoder down*: Disabled | None | *Encoder down*: Disabled | None |
 
 ## Snipe
-The Snipe layer reduces pointer speed 1/3rd of normal, allowing for precision clicking with the Left and Right mouse buttons.
-* This layer also provides access to the Device layer.
+The Snipe layer reduces pointer speed 1/3rd of normal, allowing for precision clicking with the Left/Middle/Right mouse buttons. Press the top buttons to return to the Default layer.
 
 | Left | ZMK Studio (left) | Right | ZMK Studio (right) |
 | ---- | ----- | ---- | ----- |
-| Enable Device layer | To Layer: Device | Enable Device layer | To Layer: Device |
-| Middle mouse button | Transparent | Middle mouse button | Transparent |
 | Return to Default layer | To Layer: Default | Return to Default layer | To Layer: Default |
+| Middle mouse button | Transparent | Middle mouse button | Transparent |
+| Right mouse button | Transparent | Right mouse button | Transparent |
 | Left mouse button | Transparent | Left mouse button | Transparent |
 | *Encoder up*: Disabled | None | *Encoder up*: Disabled | None |
 | *Encoder down*: Scroll Layer | To Layer: Scroll | *Encoder down*: Scroll Layer | To Layer: Scroll |
@@ -68,7 +68,7 @@ When the Scroll layer is enabled, moving the ball scrolls vertically and horizon
 
 ## Device
 The Device layer contains settings for RGB lighting and Bluetooth.
-* This layer can only be accessed by first enabling the Snipe or Scroll layers.
+* This layer can only be accessed by first enabling the Scroll layer.
   
 | Left | ZMK Studio (left) | Right | ZMK Studio (right) |
 | ---- | ----- | ---- | ----- |
