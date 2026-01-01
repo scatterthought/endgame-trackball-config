@@ -4,7 +4,7 @@ This keymap enables the efog.tech Endgame trackball to be used with either hand 
 Buttons are optimized for the user's hands to be at an angle to the trackball (since it's directly in front of their body).
 
 ## Changes in Version 2.0
-I no longer maintain forked firmware for the Endgame, since the new Marshmallow UI in the OEM firmware provides a configuration webpage for saving keymaps and adjusting device settings. My keymaps are now implemented as overrides to the default keymap in ZMK Studio.
+* Reverted to using OEM firmware and editing keymaps in ZMK Studio
 * Adjusted the Snipe layer to allow access to all main mouse buttons (Left/Middle/Right)
 * Moved RGB and Bluetooth settings to the Device layer
 * Removed the User layer
@@ -14,6 +14,11 @@ I no longer maintain forked firmware for the Endgame, since the new Marshmallow 
 * Version 1.2.0 - [Readme](version_1_2_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.2.0)
 * Version 1.1.0 - [Readme](version_1_1_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.1.0)
 * Version 1.0.0 - [Readme](version_1_0_0.md) | [Download](https://github.com/scatterthought/endgame-trackball-config/releases/tag/v.1.0.0)
+
+## Reverting to OEM firmware
+I no longer maintain forked firmware for the Endgame. My keymaps are now implemented as overrides to the default keymap in ZMK Studio, and pointer/scrolling adjustments are made with the new Marshmallow UI configuration webpage.
+
+I'm currently using this firmware version from [December 29, 2025](https://github.com/efogtech/endgame-trackball-config/actions/runs/20590754621).
 
 ## Default
 The Default layer provides the five standard mouse buttons, plus the ability to toggle on the Snipe and Scroll layers with the encoders or access the Extras layer momentarily.
